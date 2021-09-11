@@ -3,6 +3,10 @@ body{
     background: linear-gradient(188deg, rgba(4,208,168,1) 23%, rgba(2,150,215,1) 100%);
     padding: 0px;
     margin: 0px;
+    
+    height: 200vh;
+}
 
+.app{
     height: 100vh;
 }
