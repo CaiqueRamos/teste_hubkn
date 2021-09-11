@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Chart } from "react-google-charts";
 
-import Negocios from "../dbJson/negocios.json"
+import Negocios from "../../db/dbJson/negocios.json"
 
 const VendedorOne = Negocios[0];
 const VendedorTwo = Negocios[1];

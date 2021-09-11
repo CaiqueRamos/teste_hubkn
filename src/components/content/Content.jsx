@@ -5,9 +5,8 @@ import "./Content.css"
 
 import Graphic from '../grafico/Graphic.jsx'
 
-import Negocios from "../dbJson/negocios.json"
-import Performace from "../dbJson/performace.json"
-
+import Negocios from "../../db/dbJson/negocios.json"
+import Performace from "../../db/dbJson/performace.json"
 
 
 function Content() {
