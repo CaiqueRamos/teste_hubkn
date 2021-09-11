@@ -1,5 +1,5 @@
-import React, { Component, useState } from 'react';
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col, Table } from 'reactstrap';
+import React, { useState } from 'react';
+import { TabContent, TabPane, Nav, NavItem, NavLink, Col, Table } from 'reactstrap';
 import classnames from 'classnames';
 import "./Content.css"
 
@@ -12,19 +12,6 @@ import Performace from "../../db/dbJson/performace.json"
 function Content() {
 
     const [activeTab, setActiveTab] = useState('1');
-    const goal = 10;
-    const playerGoal = 9;
-
-    let meetingStatus;
-
-    if (playerGoal >= 8) {
-        meetingStatus = "semaphore green"
-    } else if (playerGoal >= 6) {
-        meetingStatus = "semaphore yellow"
-    } else {
-        meetingStatus = "semaphore red"
-    }
-
 
     const toggle = tab => {
         if (activeTab !== tab) setActiveTab(tab);
@@ -110,15 +97,15 @@ function Content() {
                                 <Table>
                                     <thead>
                                         <tr>
-                                            <th >Vendedor</th>
-                                            <th >Negócios Fechados</th>
+                                            <th>Vendedor</th>
+                                            <th>Negócios Fechados</th>
                                             <th>Valor Total</th>
                                             <th>Ticket Médio</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         {
-                                            Negocios.map((detail, index) => {
+                                            Negocios.map((detail) => {
                                                 return (
                                                     <tr>
                                                         <th >{detail.nome}</th>
