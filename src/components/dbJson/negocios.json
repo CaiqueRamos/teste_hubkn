@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "Vendedor 1",
+        "negocioFechado": 8,
+        "valorTotal": 16000,
+        "ticketMedio": 2000
+    },
+    {
+        "nome": "Vendedor 2",
+        "negocioFechado": 5,
+        "valorTotal": 25000,
+        "ticketMedio": 5000
+    },
+    {
+        "nome": "Vendedor 3",
+        "negocioFechado": 3,
+        "valorTotal": 4500,
+        "ticketMedio": 1500
+    },
+    {
+        "nome": "Vendedor 4",
+        "negocioFechado": 12,
+        "valorTotal": 36000,
+        "ticketMedio": 3000
+    }
+]

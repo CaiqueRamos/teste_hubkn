@@ -1,0 +1,36 @@
+header{
+    height: 13vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+.user--acess{
+    display: flex;
+    margin: auto 50px;
+    font-size: 20px;
+}
+.user--img img{
+    height: 10vh;
+}
+.user--ident{
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    color: white;
+}
+.user--ident h1{
+    font-size: 25px;
+    margin-top: 10px;
+}
+.user--ident span{
+    font-size: 15px;
+    margin-top: -10px;
+}
+.header--logo {
+    margin: 10px;
+}
+.header--logo img{
+    height: 20vh;
+    overflow: visible;
+}
+

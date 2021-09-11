@@ -1,0 +1,30 @@
+[
+    {
+        "nome": "vendedor 1",
+        "ligacoes": 200,
+        "tempoDeChamada": 456,
+        "emailsEnviados": 23,
+        "ReunioesAgendadas": 12
+    },
+    {
+        "nome": "vendedor 2",
+        "ligacoes": 280,
+        "tempoDeChamada": 370,
+        "emailsEnviados": 15,
+        "ReunioesAgendadas": 7
+    },
+    {
+        "nome": "vendedor 3",
+        "ligacoes": 150,
+        "tempoDeChamada": 315,
+        "emailsEnviados": 54,
+        "ReunioesAgendadas": 9
+    },
+    {
+        "nome": "vendedor 4",
+        "ligacoes": 100,
+        "tempoDeChamada": 240,
+        "emailsEnviados": 22,
+        "ReunioesAgendadas": 4
+    }
+]
