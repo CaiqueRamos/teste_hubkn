@@ -5,6 +5,7 @@
   color: rgb(138, 138, 138);
 }
 .content--tabela{
+  z-index: 10;
   width: 90%;
   margin: auto;
   padding: 10px;
@@ -58,8 +59,70 @@
 .yellow{
   background-color: rgb(255, 251, 0);
 }
-
-
+.out--modal{
+ background-color: rgba(4, 208, 167, 0.473);
+ 
+ height: 64%;
+ width: 100%;
+ margin: -110px;
+ margin-top: -260px;
+ position: absolute; 
+ 
+}
+.modal{
+  border: solid 20px  rgb(255, 255, 255);
+  background: rgb(4,208,168);
+  background: linear-gradient(188deg, rgba(4,208,168,1) 23%, rgba(2,150,215,1) 100%);
+  display: flex;
+  width: 60vw;
+  height: 70vh;
+  margin: 90px 280px;
+  border-radius: 20px;
+  padding: 10px;
+  z-index: 30;
+  
+}
+.modal--person{
+  height: 10px;
+  width: 60%;
+  text-align: center;
+  margin-top: 50px;
+}
+.modal--person img{
+  height: 30vh;
+}
+.modal--content{
+  border: solid 1px white;
+  border-radius: 20px;
+}
+.modal--content img{
+  height: 6vh;
+  margin: 10px;
+  float: right;
+}
+.content{
+  margin: 60px 40px;
+}
+.person{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.call--modal{
+  font-size: 30px;
+  margin: 2px 2px 5px 7px;
+  width: 40px;
+  align-items: center;
+  padding-left: -10px;
+  text-align: center;
+  box-shadow: 0px 0px 3px 0px white;
+}
+.call--modal:hover{
+  background-color: rgba(255, 255, 255, 0.144);
+}
+.close{
+  cursor: pointer;
+}
 @media only screen and (max-width: 790px) {
   .content--tabela {
     margin-top: 100px;

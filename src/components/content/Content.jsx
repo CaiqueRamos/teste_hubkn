@@ -8,13 +8,24 @@ import Graphic from '../grafico/Graphic.jsx'
 import Negocios from "../../db/dbJson/negocios.json"
 import Performace from "../../db/dbJson/performace.json"
 
+import Close from "../../dist/img/close.png"
+
 
 function Content() {
 
     const [activeTab, setActiveTab] = useState('1');
+    const [close, setClose] = useState('none');
 
     const toggle = tab => {
         if (activeTab !== tab) setActiveTab(tab);
+    }
+    const closeModal = () => {
+        if (close == "none") {
+            setClose('flex')
+        } else {
+            setClose('none')
+        }
+
     }
 
     return (
@@ -60,7 +71,39 @@ function Content() {
                                             Performace.map((detail, index) => {
                                                 return (
                                                     <tr>
-                                                        <th >{detail.nome}</th>
+                                                        <th >{/* Exemplo de modal, ainda precisa ser att e corrigido pro funcionamento individual
+                                                            de cada vendedor, atualmente esta um geral para todos */}
+                                                            <div className="person" onClick={closeModal}>
+                                                                {detail.nome}
+                                                                <div className="call--modal" > + </div><b></b>
+                                                            </div>
+                                                            <div className="out--modal" style={{ display: close }}>
+                                                                <div className="modal">
+                                                                    <div className="modal--person">
+                                                                        <img src="https://icons.veryicon.com/png/o/business/multi-color-financial-and-business-icons/user-139.png" />
+                                                                        <h1>Vendedor</h1>
+                                                                        <span>Campo Grande / MS</span> <br />
+                                                                        <span>67 9 9151-0214</span>
+                                                                    </div>
+                                                                    <div className="modal--content" >
+                                                                        <div className="close" onClick={closeModal}>
+                                                                            <img src={Close} />
+                                                                        </div>
+                                                                        <div className="content">
+                                                                            <h1>Observações de vendas</h1>
+                                                                            <ul>
+                                                                                <li>Cliente testOne nao possui endereço</li>
+                                                                                <li>testOne nao quer pagar o valor total</li>
+                                                                                <li>Erro no Contato do TestTwo</li>
+                                                                                <li>testOne nao quer pagar o valor total</li>
+                                                                                <li>Erro no Contato do TestTwo</li>
+                                                                                <li>Erro no Contato do TestTwo</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </th>
                                                         <th >{detail.ligacoes}</th>
                                                         <th >{detail.tempoDeChamada}</th>
                                                         <th >{detail.emailsEnviados}</th>
@@ -84,9 +127,9 @@ function Content() {
 
                                     </tbody>
                                 </Table>
-                                
+
                             </Col>
-                            
+
                         </div>
                     </div>
                 </TabPane>
