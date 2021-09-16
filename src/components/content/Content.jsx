@@ -75,7 +75,7 @@ function Content() {
                                                             de cada vendedor, atualmente esta um geral para todos */}
                                                             <div className="person" onClick={closeModal}>
                                                                 {detail.nome}
-                                                                <div className="call--modal" > + </div><b></b>
+                                                                {/* <div className="call--modal" > + </div><b></b> */}
                                                             </div>
                                                             <div className="out--modal" style={{ display: close }}>
                                                                 <div className="modal">
